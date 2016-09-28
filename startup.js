@@ -28,6 +28,12 @@ var user = prompt('Would you like an idea for a startup?').toUpperCase();
 
 if (user === "YES") {
   console.log('You should start something like ' + thisArray[startup]);
-} else {
+  var answer = prompt('Do you like this idea?').toUpperCase();
+  if (answer === 'YES') {
+    console.log('Cool');
+  } else {
+    console.log('This is the last one ' + thisArray[startup]);
+  }
+} else if ("NO") {
   console.log('Well im gonna give you one anyway' + thatArray[startupCompany]);
 }
